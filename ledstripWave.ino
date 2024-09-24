@@ -26,7 +26,7 @@ void loop() {
     int ledIndex = (position + i) % NUM_LEDS;  // Ensure the index wraps around the strip
     int brightness = sin8( (i * 255) / WAVE_LENGTH); // Sine wave pattern for smooth brightness
     
-    leds[ledIndex] = CRGB(255, 0, 255);  // Set color (red for example)
+    leds[ledIndex] = CRGB(255, 0, 255);  // Set color (purple for example)
     leds[ledIndex].fadeLightBy(255 - brightness);  // Apply the sine-based brightness
   }
 
